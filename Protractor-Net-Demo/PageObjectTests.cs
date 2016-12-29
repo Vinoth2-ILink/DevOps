@@ -21,6 +21,7 @@ namespace Protractor_Net_Demo
             driver = new ChromeDriver();
             driver.Manage().Timeouts().SetScriptTimeout(TimeSpan.FromSeconds(10));
             page = new SuperCalculatorPage(driver, URL);
+           
         }
 
         [Test]
@@ -49,7 +50,7 @@ namespace Protractor_Net_Demo
         [TearDown]
         public void Teardown()
         {
-            driver.Quit();
+            //driver.Quit();
         }
     }
 }
